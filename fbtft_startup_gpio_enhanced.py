@@ -27,9 +27,9 @@ deviceConfig = {'name':'adafruit18_green',
 		'bgr':'1'}
 
 #Enable driver and Register the device
-driverCommand = str("sudo modprobe fbtft_device name=%s rotate=%s speed=%s bgr=%s" % (deviceConfig['name'],deviceConfig['rotate'],deviceConfig['speed'],deviceConfig['bgr']))
-print(driverCommand)
-os.system('sudo modprobe fbtft_device name=adafruit18_green rotate=270 speed=26000000 bgr=1')
+os.system(str("sudo modprobe fbtft_device name=%s rotate=%s speed=%s bgr=%s" % (deviceConfig['name'],deviceConfig['rotate'],deviceConfig['speed'],deviceConfig['bgr'])))
+
+#Example output os.system('sudo modprobe fbtft_device name=adafruit18_green rotate=270 speed=26000000 bgr=1')
 
 #The loop which checks if the input pin has been brought to low for 5 seconds which the Drivers set themselves up 
 for i in range(int(initializationDelayLength*10)):
