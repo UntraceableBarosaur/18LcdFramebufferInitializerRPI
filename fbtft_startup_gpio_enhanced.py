@@ -8,7 +8,7 @@ import RPi.GPIO as GPIO
 
 
 #Choose GPIO Pin for switching
-switchDisplayPin = 26
+switchDisplayPin = 20
 
 #Set the amount of time needed for the Driver Initialization ( IN SECONDS )
 initializationDelayLength = 5
